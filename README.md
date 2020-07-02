@@ -5,7 +5,7 @@
  1. If you are using this to populate a new Prismic field, make sure you have added that field to your model in Prismic.
  2. Clone or fork this repo.
  3. Run ```npm install``` to get the packages.
- 4. Place files you wish to edit in the "For Editing" folder. 
+ 4. Add a "ForEditing" folder (at the same level as the node_modules folder). Place files you wish to edit in the "For Editing" folder. 
  5. Run ```node JsonFileIterateAndEdit.js``` in the console.
  6. Your files have been edited and you can now re-import them to Prismic. 
  7. Once you're done, you can clear the files out of "For Editing."
