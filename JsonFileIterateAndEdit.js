@@ -27,9 +27,9 @@ fs.readdir(directoryPath, function (err, files) {
             //Case: adding a uid field and populating it from slugifying the title field
             //This is where we would change code to add/edit other fields for different purposes
             obj.uid = urlSlug(obj.title)
-
+            //Turn it back to json from object.
             json = JSON.stringify(obj);
-
+            //Save the file or throw error if problem.
             fs.writeFile((directoryPath + '/' + file), json, (err) => {
                 if (err) throw err;
                 console.log(file + ' has been saved!');
