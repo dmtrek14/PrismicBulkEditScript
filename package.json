@@ -1,0 +1,14 @@
+{
+  "name": "generate-uids",
+  "version": "1.0.0",
+  "description": "loop through json files in folder and add property",
+  "main": "UidGenerator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "url-slug": "^2.3.1"
+  }
+}
