@@ -15,7 +15,7 @@ fs.readdir(directoryPath, function (err, files) {
                 console.log(err);
             } else {
             let obj = JSON.parse(data);
-            //if it isn't a content item, just delete it - we don't want to make any changes to or re-import those, anyway
+            //Checks Prismic type. If it isn't a content item, just delete it - we don't want to make any changes to or re-import those, anyway
             if(obj.type !== 'content'){
                 fs.unlink((directoryPath + '/' + file), (err) => {
                     if (err) throw err;
@@ -23,6 +23,7 @@ fs.readdir(directoryPath, function (err, files) {
                 })
             } else {
             //add uid with slugified-version of title
+            //This is where we would change code to add/edit other fields for different purposes
             obj.uid = urlSlug(obj.title)
 
             json = JSON.stringify(obj);
