@@ -2,9 +2,6 @@ const fs = require('fs');
 const path = require('path')
 const urlSlug = require('url-slug')
 
-//to run, run 'node Uidgenerator.js' in the console
-//change directory path as needed
-
 const directoryPath = path.join(__dirname, './ForEditing');
 
 fs.readdir(directoryPath, function (err, files) {
