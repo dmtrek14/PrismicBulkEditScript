@@ -5,6 +5,7 @@
  1. Run ```npm install``` to get the packages.
  2. Place files you wish to edit in the "For Editing" folder. 
  3. Run ```node JsonFileIterateAndEdit.js``` in the console.
+ 4. Your files have been edited and you can now re-import them to Prismic.
    
 ## Other considerations
 This script was written to bulk edit just the "content" type of item. The script deletes the other documents from the folder since we don't want to edit and upload anything other than "content" items. 
